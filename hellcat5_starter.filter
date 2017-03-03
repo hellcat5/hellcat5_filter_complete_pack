@@ -1,0 +1,749 @@
+#Created By: hellcat5
+#creation date: 20150712
+#update date: 20170303
+#purpose: custom filter for path of exile
+#include: reference.txt
+#
+#************************
+# fishing rod
+#************************
+# fishing rod - parchment color black text
+Show
+    Class "Fishing Rods"
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 170 158 130
+	SetBackgroundColor 170 158 130
+	PlayAlertSound 1 200
+
+#************************
+# uniques
+#************************
+# uniques t1 - 2 or more exalted - text enlarged (45) sound 2
+Show
+	BaseType "Occultist's Vestment" "Glorious Plate" "Assassin's Garb" "Exquisite Leather" "Vaal Regalia" "Sorcerer Boots" "Crusader Boots" "Vaal Gauntlets" "Deicide Mask" "Champion Kite Shield" "Vaal Axe" "Gavel" "Prophecy Wand"
+	Rarity Unique
+	SetFontSize 45
+	SetTextColor 205 126 67 
+	PlayAlertSound 2 200
+
+# uniques t2 - 1ex to 2ex - text enlarged (40) sound 3
+Show
+	BaseType "Onyx Amulet" "Gold Ring" "Unset Ring" "Paua Ring" "Sacrificial Garb" "Vaal Mask" "Corrugated Buckler" "Imperial Bow" "Great Mallet" "Judgement Staff" "Vaal Blade" "Silver Flask" "Sapphire Flask" "Crimson Jewel" "Cobalt Jewel" "Viridian Jewel" "Hubris Circlet"
+	Rarity Unique
+	SetFontSize 45
+	PlayAlertSound 2 200
+
+# uniques t3 - 20 chaos to 1ex - text enlarged (40) sound 3
+Show
+	BaseType "Penetrating Arrow Quiver" "Broadhead Arrow Quiver" "Agate Amulet" "Golden Plate" "Crusader Plate" "Zodiac Leather" "Savant's Robe" "Simple Robe" "Necromancer Silks" "Reinforced Greaves" "Sharkskin Boots" "Conjurer Boots" "Legion Boots" "Goliath Gauntlets" "Ancient Gauntlets" "Deerskin Gloves" "Conjurer Gloves" "Crusader Gloves" "Ursine Pelt" "Nightmare Bascinet" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Archon Kite Shield" "Large Hybrid Flask" "Hallowed Hybrid Flask" "Granite Flask" "Imperial Staff" "Auric Mace" "Platinum Sceptre" "Crystal Sceptre" "Terror Maul" "Slaughter Knife" "Fiend Dagger" "Imperial Skean" "Terror Claw" "Imperial Claw" "Ranger Bow" "Spine Bow" "Siege Axe"
+	Rarity Unique
+	SetFontSize 40
+	PlayAlertSound 3 200
+
+# uniques t4 - 10 chaos to 20 chaos - text enlarged (40) sound 3
+Show
+	BaseType "Penetrating Arrow Quiver" "Broadhead Arrow Quiver" "Agate Amulet" "Golden Plate" "Crusader Plate" "Zodiac Leather" "Savant's Robe" "Simple Robe" "Necromancer Silks" "Reinforced Greaves" "Sharkskin Boots" "Conjurer Boots" "Legion Boots" "Goliath Gauntlets" "Ancient Gauntlets" "Deerskin Gloves" "Conjurer Gloves" "Crusader Gloves" "Ursine Pelt" "Nightmare Bascinet" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Archon Kite Shield" "Large Hybrid Flask" "Hallowed Hybrid Flask" "Granite Flask" "Imperial Staff" "Auric Mace" "Platinum Sceptre" "Crystal Sceptre" "Terror Maul" "Slaughter Knife" "Fiend Dagger" "Imperial Skean" "Terror Claw" "Imperial Claw" "Ranger Bow" "Spine Bow" "Siege Axe"
+	Rarity Unique
+	SetFontSize 40
+	PlayAlertSound 3 200
+
+# uniques t5 - 10 chaos to 20 chaos - text enlarged (40) sound 3
+Show
+	BaseType "Penetrating Arrow Quiver" "Broadhead Arrow Quiver" "Agate Amulet" "Golden Plate" "Crusader Plate" "Zodiac Leather" "Savant's Robe" "Simple Robe" "Necromancer Silks" "Reinforced Greaves" "Sharkskin Boots" "Conjurer Boots" "Legion Boots" "Goliath Gauntlets" "Ancient Gauntlets" "Deerskin Gloves" "Conjurer Gloves" "Crusader Gloves" "Ursine Pelt" "Nightmare Bascinet" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Archon Kite Shield" "Large Hybrid Flask" "Hallowed Hybrid Flask" "Granite Flask" "Imperial Staff" "Auric Mace" "Platinum Sceptre" "Crystal Sceptre" "Terror Maul" "Slaughter Knife" "Fiend Dagger" "Imperial Skean" "Terror Claw" "Imperial Claw" "Ranger Bow" "Spine Bow" "Siege Axe"
+	Rarity Unique
+	PlayAlertSound 3 200
+
+# uniques - fated - text enlarged (40) sound 3
+Show
+	BaseType "Coral Amulet" "Jade Amulet" "Iron Ring" "Two-Stone Ring" "Coral Ring" "Serrated Arrow Quiver" "Plate Vest" "Scholar Boots" "Goathide Gloves" "Iron Hat" "Vine Circlet" "Gilded Sallet" "Painted Buckler" "Plank Kite Shield" "Jade Hatchet" "Woodsplitter" "Death Bow" "Royal Bow" "Crude Bow" "Long Bow" "Sledgehammer" "Iron Staff" "Ornate Sword" "Fire Arrow Quiver" 
+	Rarity Unique
+	SetFontSize 40
+	SetTextColor 181 71 254
+	PlayAlertSound 3 200
+
+# uniques t6 - text enlarged (40) darker font color
+Show
+	Rarity Unique
+	SetTextColor 145 66 7
+
+#************************
+# special conditions override
+#************************
+# on the BaseType line add in any specific basetype you want to add to
+# this list.  Adding a BaseType here will override it falling under any
+# other rule below.  Typical useage: for release of new endgame item
+# basetypes that have a high value until the market becomes more abundant.
+Show
+	BaseType "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Two-Toned Boots" "Bone Helmet" "Crystal Belt" "Vanguard Belt" "Marble Amulet" "Blue Pearl Amulet" "Opal Ring" "Steel Ring"
+	SetFontSize 45
+	SetTextColor 255 255 0
+	SetBorderColor 255 180 220
+	SetBackgroundColor 255 180 220
+
+#************************
+# jewels
+#************************
+#jewels  - purple
+Show
+	Class Jewel
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 155 0 235
+	SetBackgroundColor 155 0 235
+	PlayAlertSound 9 200
+
+#************************
+# gems
+#************************	
+# quality gems - light green background black text match sound to Gemcutter's Prism
+Show
+	Class Gems
+	Quality > 1
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 99 200 55
+	SetBackgroundColor 99 200 55
+	PlayAlertSound 6 200
+
+#Show gem drops - you can add conditions here to cut down on the gems shown
+Show
+	Class Gems
+	SetFontSize 45
+	
+#************************
+# divination cards
+#************************
+#divination card t1 - 2ex + brownish orange background black text
+Show
+	Class "Divination Card"
+	BaseType "The Brittle Emperor" "The Doctor" "The Fiend" "The Formless Sea" "House of Mirrors" "Hunter's Reward"
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 200 100 0
+	SetBackgroundColor 200 100 0
+	PlayAlertSound 2 200
+
+#divination card t2 - 1ex to 2ex brownish orange background black text
+Show
+	Class "Divination Card"
+	BaseType "The Immortal" "The Queen" "The Thaumaturgist" "Mawr Blaidd"
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 170 70 0
+	SetBackgroundColor 170 70 0
+	PlayAlertSound 2 200
+
+#divination card t3 - 20c to 1ex brownish orange background black text
+Show
+	Class "Divination Card"
+	BaseType "Abandoned Wealth" "The Artist" "The Celestial Justicar" "The Dragon's Heart" "The Ethereal" "The Harvester" "Heterochromia" "The Hunger" "The King's Heart" "Last Hope" "The Last One Standing" "Lysah's Respite" "The Offering" "Pride Before the Fall" "Time-Lost Relic" "The Valkyrie" "The Vast" "Wealth and Power" "The Void"
+	SetFontSize 40
+	SetTextColor 0 0 0
+	SetBorderColor 170 70 0
+	SetBackgroundColor 170 70 0
+	PlayAlertSound 3 200
+
+#divination card t4 - 10c to 20c brownish orange background black text
+Show
+	Class "Divination Card"
+	BaseType "Bowyer's Dream" "The Dapper Prodigy" "The Enlightened" "Hope" "Lucky Deck" "The Sephirot" "The Tyrant" "The Warlord" "The Wolf"
+	SetFontSize 40
+	SetTextColor 0 0 0
+	SetBorderColor 170 70 0
+	SetBackgroundColor 170 70 0
+	PlayAlertSound 3 200
+
+#divination card t5 - 2c to 10c - brownish orange background black text
+Show
+	Class "Divination Card"
+	BaseType "The Aesthete" "The Arena Champion" "Assassin's Favour" "The Avenger" "The Battle Born" "The Body" "The Calling" "The Cartographer" "Cartographer's Delight" "The Chains that Bind" "Chaotic Disposition" "The Cursed King" "The Dark Mage" "Dialla's Subjugation" "Earth Drinker" "Emperor of Purity" "The Fletcher" "The Gentleman" "The Gladiator" "Glimmer of Hope" "The Hoarder" "Humility" "Hunter's Resolve" "The Inventor" "Jack in the Box" "The Jester" "Lost Worlds" "Lucky Connections" "The Mercenary" "Merciless Armament" "The Pact" "The Penitent" "Rats" "The Risk" "The Road to Power" "Scholar of the Seas" "The Soul" "The Spoiled Prince" "The Stormcaller" "The Surveyor" "The Trial" "The Union" "Vinia's Token" "The Visionary" "Volatile Power" "The Watcher" "The Wind" "The Oath"
+	SetTextColor 0 0 0
+	SetBorderColor 170 70 0
+	SetBackgroundColor 170 70 0
+	PlayAlertSound 3 200
+
+#divination card t6 - 1c - brownish orange background black text
+Show
+	Class "Divination Card"
+	BaseType "Audacity" "The Betrayal" "Birth of the Three" "Blind Venture" "Boundless Realms" "The Cataclysm" "The Catalyst" "The Conduit" "Coveted Possession" "Death" "The Demoness" "The Doppelganger" "The Drunken Aristocrat" "Emperor's Luck" "The Encroaching Darkness" "The Explorer" "The Feast" "The Fox" "Gemcutter's Promise" "Gift of the Gemling Queen" "Grave Knowledge" "Hubris" "The Incantation" "Light and Truth" "The Lord in Black" "The Pack Leader" "The Poet" "Prosperity" "Shard of Fate" "The Siren" "The Throne" "The Traitor" "Tranquillity" "Treasure Hunter" "The Web" "The Wrath"
+	SetTextColor 0 0 0
+	SetBorderColor 170 70 0
+	SetBackgroundColor 170 70 0
+
+#divination card t7 - under 1c - brownish orange background black text
+Show
+	Class "Divination Card"
+	SetTextColor 0 0 0
+	SetBorderColor 140 40 0
+	SetBackgroundColor 140 40 0
+
+#************************
+# map device items
+#************************
+# map drops - magenta background black text - ultra tier
+Show
+	Class Maps
+	DropLevel >= 83
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 230 0 180
+	SetBackgroundColor 230 0 180
+	PlayAlertSound 7 200
+
+# map drops - magenta background gold text - top tier
+Show
+	Class Maps
+	DropLevel >= 78
+	DropLevel <= 82
+	SetFontSize 45
+#	SetTextColor 200 200 200
+	SetTextColor 235 207 159
+	SetBorderColor 200 0 150
+	SetBackgroundColor 200 0 150
+	PlayAlertSound 7 200
+
+# map drops - magenta background yellow text - middle tier
+Show
+	Class Maps
+	DropLevel >= 73
+	DropLevel <= 77
+	SetFontSize 40
+	SetTextColor 255 255 0
+	SetBorderColor 200 0 150
+	SetBackgroundColor 200 0 150
+	PlayAlertSound 7 200
+
+# map drops - magenta background white text - low tier
+Show
+	Class Maps
+	DropLevel >= 58
+	DropLevel <= 72
+	SetFontSize 40
+	SetTextColor 230 230 230
+	SetBorderColor 170 0 120
+	SetBackgroundColor 170 0 120
+
+# map fragments and other map types - magenta black text
+Show
+	Class Map
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 230 0 180
+	SetBackgroundColor 230 0 180
+	PlayAlertSound 7 200
+
+#************************
+# 6 sockets - 6L 5L 6S 6S5L
+#************************
+# 6 linked sockets - light grey background black text
+Show
+	LinkedSockets 6
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 200 200 200
+	SetBackgroundColor 200 200 200
+	PlayAlertSound 8 200
+
+# 6 sockets 5 linked - dark grey background tan text
+Show
+	LinkedSockets 5
+	Sockets 6
+	SetFontSize 45
+	SetTextColor 255 227 162
+	SetBorderColor 97 97 97
+	SetBackgroundColor 97 97 97
+	PlayAlertSound 5 200
+
+# 5 linked sockets - grey background black text
+Show
+	LinkedSockets 5
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 120 120 120
+	SetBackgroundColor 120 120 120
+	PlayAlertSound 5 200
+
+# 6 sockets - dark grey background tan text
+Show
+	Sockets 6
+	SetFontSize 45
+	SetTextColor 238 210 145
+	SetBorderColor 80 80 80
+	SetBackgroundColor 80 80 80
+	PlayAlertSound 4 200
+
+#************************
+# vaal corrupt white sockets
+#************************
+# white socket corrupted - three white - off hand gem leveling
+Show
+	Class Claw Dagger Wand One Hand Sceptres Shields
+	Sockets 3
+	SocketGroup WWW
+	SetFontSize 45
+	SetTextColor 255 255 255
+	SetBorderColor 143 33 0
+	SetBackgroundColor 143 33 0
+	PlayAlertSound 2 200
+
+# white socket corrupted - at least two white - off hand gem leveling
+Show
+	Class Claw Dagger Wand One Hand Sceptres Shields
+	Sockets 3
+	SocketGroup WW
+	SetFontSize 40
+	SetTextColor 255 255 255
+	SetBorderColor 143 33 0
+	SetBackgroundColor 143 33 0
+
+# white socket corrupted - at least one white - off hand gem leveling
+Show
+	Class Claw Dagger Wand One Hand Sceptres Shields
+	Sockets 3
+	SocketGroup W
+	SetTextColor 255 255 255
+	SetBorderColor 113 3 0
+	SetBackgroundColor 113 3 0
+
+#************************
+# vendor recipes
+#************************
+# regal recipe - blue background black text - endgame basetypes
+Show
+	DropLevel >= 62
+    Rarity Rare
+	ItemLevel >= 75
+    SetFontSize 45
+	SetTextColor 0 0 0
+    SetBorderColor 47 91 244
+	SetBackgroundColor 47 91 244
+
+# regal recipe - rings amulets, belts, and quivers 
+Show
+	Class Ring Amulet Belt Quiver
+    Rarity Rare
+	ItemLevel >= 75
+	SetFontSize 45
+	SetTextColor 255 255 0
+    SetBorderColor 47 91 244
+	SetBackgroundColor 47 91 244
+
+# regal recipe - low tier - blue background golden text
+Show
+	Rarity Rare
+	ItemLevel >= 75
+	SetTextColor 235 207 159
+    SetBorderColor 62 128 188
+	SetBackgroundColor 62 128 188
+
+# chaos recipe - golden background black text - endgame basetypes
+Show
+	DropLevel >= 62
+	Rarity Rare
+	ItemLevel >= 60
+	ItemLevel <= 74
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 223 150 13
+	SetBackgroundColor 223 150 13
+
+# chaos recipe - rings amulets belts quivers
+Show
+	Class Ring Amulet Belt Quiver
+    Rarity Rare
+	ItemLevel >= 60
+    ItemLevel <= 74	
+	SetFontSize 45
+	SetTextColor 255 255 0
+	SetBorderColor 223 150 13
+    SetBackgroundColor 223 150 13
+
+# chaos recipe - mid to low tier basetypes
+Show
+    Rarity Rare
+	ItemLevel >= 60
+    ItemLevel <= 74
+	SetTextColor 0 0 0
+	SetBorderColor 200 127 0
+    SetBackgroundColor 200 127 0
+		
+# chance recipe - raddish background black text
+Show
+    Rarity Rare
+    ItemLevel < 60
+	SetFontSize 45
+	SetTextColor 0 0 0
+    SetBorderColor 250 50 90
+	SetBackgroundColor 250 50 90
+
+# chance recipe - rings amulets belts quivers
+Show
+	Class Ring Amulet Belt Quiver
+    Rarity Rare
+	ItemLevel < 60
+	SetFontSize 45
+	SetTextColor 255 255 0
+    SetBorderColor 250 50 90
+	SetBackgroundColor 250 50 90
+
+# chisel vendor recipe quality (one of the maces below quality 20 + map = chisel) - pee yellow background black text
+Show
+	Class "One Hand Mace"
+	BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+	Rarity < Magic
+	Quality > 9
+	SetFontSize 45
+#	SetTextColor 75 50 0
+	SetTextColor 255 255 0
+	SetBorderColor 125 125 0
+	SetBackgroundColor 125 125 0
+
+# chisel vendor recipe (one of the maces below quality 20 + map = chisel) - pee yellow background black text
+Show
+	Class "One Hand Mace"
+	BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+	Rarity < Magic
+#	commented out to show ALL normal gavel things
+#	ItemLevel < 68
+	SetTextColor 75 50 0
+	SetBorderColor 125 125 0
+	SetBackgroundColor 125 125 0
+
+#************************
+# flasks
+#************************
+# quality 20 flask - vendor 1 quality 20 flask for 1 glassblower's bauble
+Show
+	Class Flasks
+	Quality = 20
+	SetFontSize 45
+	SetTextColor 125 255 125
+	SetBorderColor 120 120 120
+	SetBackgroundColor 120 120 120
+
+# utility flasks quality - vendor total combined value of 40 - grey background black text
+Show
+	Class "Utility Flasks"
+	Quality >= 1
+	SetFontSize 45
+	SetTextColor 255 255 0
+	SetBorderColor 120 120 120
+	SetBackgroundColor 120 120 120
+
+# utility flasks - grey background black text
+Show
+	Class "Utility Flasks"
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 120 120 120
+	SetBackgroundColor 120 120 120
+
+# life / mana potions quality - endgame - grey background black text
+Show
+	Class Life Mana Hybrid
+	Quality >= 1
+	DropLevel >= 60
+	SetFontSize 45
+	SetTextColor 255 255 0
+	SetBorderColor 180 180 180
+	SetBackgroundColor 180 180 180
+
+# life / mana potions - endgame - grey background black text
+Show
+	Class Life Mana Hybrid
+	DropLevel >= 60
+	ItemLevel < 68
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 180 180 180
+	SetBackgroundColor 180 180 180
+
+# life / mana potions quality - beginning - grey background black text
+Show
+	Class Life Mana Hybrid
+	Quality >= 1
+	DropLevel <= 59
+	SetFontSize 40
+	SetTextColor 255 255 0
+	SetBorderColor 120 120 120
+	SetBackgroundColor 120 120 120
+
+# life / mana potions - beginning - grey background black text
+Show
+	Class Life Mana Hybrid
+	DropLevel <= 59
+	ItemLevel < 68
+	SetFontSize 40
+	SetTextColor 0 0 0
+	SetBorderColor 120 120 120
+	SetBackgroundColor 120 120 120
+		
+#************************
+# currency
+#************************
+# tier 1 currency (mirror) - fishing rod and mirror black text
+Show
+    BaseType "Mirror of Kalandra"
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 230 218 190
+	SetBackgroundColor 230 218 190
+	PlayAlertSound 1 200
+
+# tier 2 currency - default currency text set as background black text
+Show
+	BaseType "Exalted Orb" "Eternal Orb" "Divine Orb" "Albino Rhoa Feather" "Stacked Deck"
+	SetFontSize 45
+	SetTextColor 0 0 0
+#	SetBorderColor 200 188 160
+#	SetBackgroundColor 200 188 160
+	SetBorderColor 255 255 0
+	SetBackgroundColor 255 255 0
+	PlayAlertSound 2 200
+
+# tier 3 currency - drop or recipe only - default currency text set as background black text
+Show
+	BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Blessed Orb" "Regal Orb" "Cartographer's Chisel"
+	SetFontSize 45
+	SetTextColor 0 0 0
+#	SetBorderColor 170 158 130
+#	SetBackgroundColor 170 158 130
+	SetBorderColor 225 225 0
+	SetBackgroundColor 225 225 0
+	PlayAlertSound 6 200
+
+# tier 4 currency - default currency text set as background black text
+Show
+	BaseType "Orb of Fusing" "Chromatic Orb" "Orb of Regret" "Orb of Scouring" "Orb of Chance" "Orb of Alchemy"
+	SetFontSize 45
+	SetTextColor 0 0 0
+#	SetBorderColor 140 128 100
+#	SetBackgroundColor 140 128 100
+	SetBorderColor 195 195 0
+	SetBackgroundColor 195 195 0
+	PlayAlertSound 3 200
+	
+# wisdom and portal scrolls - parchment background black text
+Show
+	BaseType Scroll
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 223 175 104
+	SetBackgroundColor 223 175 104
+	
+# Tier 5 and league specific currency - enlarged font size
+Show
+	Class Currency
+	SetFontSize 45
+
+#************************
+# essence league
+#************************
+# essence tier 1
+Show
+	BaseType "Whispering Essence"
+	SetFontSize 45
+	PlayAlertSound 3 200
+
+# essence tier 2
+Show
+	BaseType "Muttering Essence"
+	SetFontSize 45
+	PlayAlertSound 3 200
+
+# essence tier 3
+Show
+	BaseType "Weeping Essence"
+	SetFontSize 45
+	PlayAlertSound 3 200
+
+# essence tier 4
+Show
+	BaseType "Wailing Essence"
+	SetFontSize 45
+	PlayAlertSound 3 200
+
+# essence tier 5
+Show
+	BaseType "Screaming Essence"
+	SetFontSize 45
+	PlayAlertSound 6 200
+
+# essence tier 6
+Show
+	BaseType "Shrieking Essence"
+	SetFontSize 45
+	PlayAlertSound 6 200
+
+# essence tier 7
+Show
+	BaseType "Deafening Essence"
+	SetFontSize 45
+	PlayAlertSound 6 200
+
+# essence tier 8
+Show
+	BaseType Essence
+	SetFontSize 45
+	PlayAlertSound 2 200
+
+#************************
+# breach league
+#************************
+# splinters and blessings
+Show
+	Class Currency
+	BaseType "Splinter of" "Blessing of"
+	SetFontSize 45
+	PlayAlertSound 6 200
+	SetTextColor 181 71 254
+
+#************************
+# leagacy league
+#************************
+# Leaguestone - magenta black text
+Show
+	Class Leaguestone
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 230 0 180
+	SetBackgroundColor 230 0 180
+	PlayAlertSound 7 200
+
+#************************
+# special cases
+#************************
+# talisman
+Show
+	BaseType Talisman
+	SetFontSize 45
+
+# labyrinth - black background orange text
+Show
+	Class Labyrinth
+	SetFontSize 45
+	SetTextColor 200 120 0
+	PlayAlertSound 9 200
+
+# atlas - seal, sextant, unshaping
+Show
+	Class Currency
+	BaseType Seal Sextant Unshaping
+	SetFontSize 45
+	PlayAlertSound 6 200
+
+# quest items - bigger font size
+Show
+	Class Quest
+	SetFontSize 45
+
+#************************
+# chancing, crafting, alching, build gear
+#************************
+##### add your basetypes here for chancing #####
+# chancing basetypes - turquoise / cyan background black text
+Show
+	BaseType "Turquoise Amulet" "Agate Amulet" "Leather Belt" "Occultist's Vestment" "Prophecy Wand" "Sorcerer Boots"
+	Rarity < Magic
+	SetFontSize 45
+	SetTextColor  0 50 75
+	SetBorderColor 0 255 255
+	SetBackgroundColor 0 255 255
+
+##### crafting override section #####
+# add the basetypes you want to search for to the BaseType line below
+# crafting / alching basetypes + build gear - bubblegum background black text
+Show
+	BaseType "Titanium Spirit Shield"
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 255 180 220
+	SetBackgroundColor 255 180 220
+##### end override section #####
+
+# crafting / alching accessories basetypes - bubblegum background black text
+Show
+	Class Ring Amulet Belt Quiver
+	ItemLevel >= 83
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 255 180 220
+	SetBackgroundColor 255 180 220
+
+# general endgame basetypes - bubblegum background black text
+Show
+	DropLevel >= 62
+	ItemLevel >= 83
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 255 255 0
+	SetBackgroundColor 255 255 0
+
+# general 4L items
+Show
+	LinkedSockets = 4
+	Height = 2
+	Width = 2
+	SetFontSize 45
+	SetTextColor 50 255 255
+#	SetBorderColor 255 180 220
+#	SetBackgroundColor 255 180 220
+
+#************************
+# chromatic vendor recipe
+#************************	
+# rgb vendor recipe
+Show
+	SocketGroup RGB
+	Rarity < Rare
+	SetFontSize 45
+	SetTextColor 0 0 175
+	SetBorderColor 200 0 0
+	SetBackgroundColor 0 150 0
+
+#************************
+# blacksmith whetstones and armour's scraps
+#************************
+# blacksmith whetstone 2 - vendor a total of 40 percent quality weapons for 1 blacksmith's whetstone
+Show
+	Class Claws Daggers Wands Swords Maces Axes Bows Staves Sceptres
+	Quality >= 1
+	SetFontSize 45
+	SetTextColor 255 255 50
+#	SetBorderColor 120 120 120
+#	SetBackgroundColor 120 120 120
+
+# blacksmith's whetstone 1 - vendor 1 quality 20 percent weapon for blacksmith's whetstone
+Show
+	Class Claws Daggers Wands Swords Maces Axes Bows Staves Sceptres
+	Quality = 20
+	SetFontSize 45
+	SetTextColor 125 255 125
+#	SetBorderColor 120 120 120
+#	SetBackgroundColor 120 120 120
+
+# armour's scraps - vendor a total of 40 percent armour gear for 1 armourer's scrap
+Show
+	Class Gloves "Body Armour" Boots Helmets Shields
+	Quality >= 1
+	SetFontSize 45
+	SetTextColor 255 255 50
+#	SetBorderColor 120 120 120
+#	SetBackgroundColor 120 120 120
+
+# armourer's scraps 1 - vendor 1 quality 20 percent armour for 1 armourer's scrap
+Show
+	Class Gloves "Body Armour" Boots Helmets Shields
+	Quality = 20
+	SetFontSize 45
+	SetTextColor 125 255 125
+#	SetBorderColor 120 120 120
+#	SetBackgroundColor 120 120 120
+
+#************************
+# no more face
+#************************
+#lets hide everything else that does not qualify for one of the above rules
+Hide
+    Rarity < Rare
